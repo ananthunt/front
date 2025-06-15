@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html, body, #root {
+  height: 100%;
+}
+.App {
+  width: 100vw;       
+  height: 100vh;      
+  display: flex; 
+  background-color:#fdfbfb
+  ;     
+}
+
+/* Sidebar */
+.sidebar {
+  height: 100%;
+  width: 230px;
+  position: fixed;
+  top: 0;
+  left: 0px;  
+  background-color: #1f2937; /* Tailwind's gray-800 equivalent */
+  color: lch(97.65% 1.54 290.34);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.SidebarList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.05rem;
+  padding: 10rem 0;
+  list-style: none;
+   
+}
+.main-content {
+  margin-left: 250px;
+  padding-top: 70px;   
+}
+
+.SidebarList .sidebar-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+  gap: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  padding: .9rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 12px; /* smaller text (14px) */
+  font-family: system-ui, sans-serif;
+  line-height: 1rem;
+  margin-bottom: .5rem;
+  background-color: transparent;
+
+}
+
+/* Hover effect: scale + shadow */
+.SidebarList .sidebar-row:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 6px 12px rgba(50, 1, 1, 0.25);
+background-color: #351289f3; /* for violet shade */
+}
+
+/* Active (click) effect: scale down */
+.SidebarList .sidebar-sidebar-row:active {
+  transform: scale(0.98);
+  box-shadow: 0 4px 8px hwb(0 11% 89% / 0.99);
+}
+ 
+
+.text-violet-500 {
+  color: #9066f3;
+}
+.text-yellow-500 {
+  color: #f0cf14;
+}
+
+.text-emerald-600 {
+  color: #059669;
+}
+
+.text-orange-600 {
+  color: #ea580c;
+}
+
+.text-blue-500 {
+  color: #118dc7;
+}
+
+.text-rose-500 {
+  color: #f43f5e;
+}
+
+.text-amber-500 {
+  color: #f59e0b;
+}
+
+.text-red-500 {
+  color: #ef4444;
+}
